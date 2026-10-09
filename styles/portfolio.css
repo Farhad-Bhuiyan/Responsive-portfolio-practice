@@ -464,9 +464,11 @@ footer .footer-container {
 
     }
      #about .about-container .about-info {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .btn{
+        margin-bottom: 15px;
     }
     
 }
