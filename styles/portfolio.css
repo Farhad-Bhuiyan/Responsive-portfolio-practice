@@ -453,26 +453,83 @@ footer .footer-container {
     }
 }
 
+
 @media screen and (min-width: 577px) and (max-width: 991px) {
-    
-    .skill-box {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
+    /* Container */
+    .container {
+        width: 90%;
     }
+
+    /* Banner */
     #banner {
         flex-direction: column;
+        margin: 40px auto 0;
+        width: 90%;
+        gap: 30px;
+        text-align: center;
     }
 
+    #banner .banner-content h1 {
+        font-size: 60px;
+    }
+
+    #banner .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Skills */
     #skills .skills-container .skill-box {
-        flex-wrap: wrap;
-
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
     }
-     #about .about-container .about-info {
-        flex-wrap: wrap;
+
+    .skill-box .skill-card {
+        max-width: none;
+        min-width: 0;
+    }
+
+    /* About */
+    #about .about-container {
+        padding: 60px 30px;
+    }
+
+    #about .about-container .about-info {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 15px;
     }
-    .btn{
+
+    /* Buttons */
+    .btn {
         margin-bottom: 15px;
     }
-    
+
+    /* Resume */
+    #resume .resume-container {
+        gap: 25px;
+    }
+
+    .resume-card {
+        margin-right: 0;
+    }
+
+    /* Footer */
+    footer .footer-container {
+        gap: 30px;
+    }
+
+    .footer-container .social,
+    .footer-container .form {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
 }
