@@ -282,3 +282,151 @@ footer .footer-container {
 
     color: #757575
 }
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .container {
+        width: 92%;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+    }
+
+    #banner {
+        flex-direction: column;
+    }
+    #banner {
+        width: 92%;
+        flex-direction: column;
+        margin: 45px auto 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    #banner .banner-content,
+    #banner .banner-image {
+        width: 100%;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 28px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: clamp(36px, 10vw, 52px);
+        margin-bottom: 15px;
+    }
+
+    #banner .banner-content p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    #banner .banner-content > div {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #banner .banner-image img {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .grp-btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about .about-container {
+        padding: 45px 20px;
+    }
+
+    #about .about-container .about-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-info .info-card p,
+    .about-info .info-card h4 {
+        font-size: 17px;
+    }
+
+    #skills .skills-container .skill-box {
+        flex-direction: column;
+
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #resume .resume-container {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 45px;
+    }
+
+    .resume-container .section-title {
+        font-size: 25px;
+    }
+
+    .resume-card .card-title {
+        font-size: 22px;
+    }
+
+    .resume-card .card-info {
+        font-size: 17px;
+    }
+
+    .resume-card .card-text {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    #resume .text-center {
+        margin-top: 25px;
+    }
+
+
+    footer {
+        margin-top: 70px;
+        padding: 60px 0;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 45px;
+
+    }
+
+    .footer-container h2 {
+        font-size: 28px;
+    }
+
+    .footer-container .social,
+    .footer-container .form {
+        width: 100%;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 100%;
+        padding: 15px 18px;
+    }
+
+    .
+}
