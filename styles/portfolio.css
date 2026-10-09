@@ -455,7 +455,11 @@ footer .footer-container {
 
 @media screen and (min-width: 577px) and (max-width: 991px) {
     
-     #banner {
+    .skill-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #banner {
         flex-direction: column;
     }
 
